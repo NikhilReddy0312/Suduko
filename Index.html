@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sudoku</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
+</head>
+<body>
+  <div class="sdk-root">
+    <div class="sdk-header">
+      <p class="sdk-title">Sudoku</p>
+      <div class="sdk-controls">
+        <button class="sdk-btn" id="hintBtn">Hint</button>
+        <button class="sdk-btn primary" id="newBtn">New game</button>
+      </div>
+    </div>
+
+    <div class="sdk-meta">
+      <div class="sdk-diff" id="diffBtns">
+        <button class="sdk-diff-btn active" data-d="easy">Easy</button>
+        <button class="sdk-diff-btn" data-d="medium">Medium</button>
+        <button class="sdk-diff-btn" data-d="hard">Hard</button>
+      </div>
+      <div class="sdk-timer" id="timer">0:00</div>
+      <div class="sdk-mistakes">Mistakes: <span id="mistakeCount">0</span>/3</div>
+    </div>
+
+    <div class="sdk-grid-wrap">
+      <div class="sdk-grid" id="grid"></div>
+    </div>
+
+    <div class="sdk-numpad" id="numpad"></div>
+    <div class="sdk-status" id="status"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
